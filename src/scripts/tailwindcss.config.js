@@ -1,0 +1,10 @@
+tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cor0: '#303030',
+          cor1: '#F9F9F9'
+        }
+      }
+    }
+  }
