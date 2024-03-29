@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="src/scripts/tailwindcss.config.js" defer></script>
     <title>Landing Page</title>
 </head>
-<body>
+<body class="font-['inter'] container">
     <main class=" bg-cor0 mx-auto bg-cor0 text-white w-screen h-screen">
         <header class="h-96 px-10 flex flex-col justify-center gap-4">
             <h1 class="text-5xl font-bold">Tradição em projetos de arquitetura</h1>
             <p>Arquitetura residencial e comercial. </p>
         </header>
-        <section class="h-64 bg-cor1 text-cor0 px-10 ">
-            <ul class="flex flex-row justify-between ">
+        <section class="h-64 bg-cor1 text-cor0 px-10 flex items-center ">
+            <ul class="flex flex-row justify-between w-full">
                 <li>
                     <p class="text-4xl font-bold">850</p>
                     <p>empreendimentos construídos</p>
                 </li>
                 <li>
-                    <p class="text-4xl">40</p>
+                    <p class="text-4xl font-bold">40</p>
                     <p>anos de mercado e experiência </p>
                 </li>
                 <li>
-                    <p class="text-4xl">2,000,000</p>
+                    <p class="text-4xl font-bold">2,000,000</p>
                     <p>m² em projetos construídos</p>
                 </li>
             </ul>
@@ -32,13 +35,21 @@
         <section class="flex flex-row justify-between gap-4 bg-white text-cor0 p-10">
             <div class="w-2/4 flex  flex-col justify-center px-4 gap-6">
                 <h2 class="text-4xl font-bold">Arquitetos com historia e experiencia</h2>
-                <p>Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais de 800 projetos e 2.000.000 de m² construídos, tendo como principal proposta transformar em realidade os sonhos de seus clientes, criando projetos personalizados, unindo a tradição e a modernidade em nossos projetos.</p>
+                <p class="font-light">Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais de 800 projetos e 2.000.000 de m² construídos, tendo como principal proposta transformar em realidade os sonhos de seus clientes, criando projetos personalizados, unindo a tradição e a modernidade em nossos projetos.</p>
             </div>
             <div class="w-2/4 ">
                 <img src="src/assets/img/rom.png" alt="room" class="rounded-xl w-full">
             </div>
         </section>
-        <footer></footer>
+        <footer class="bg-cor0 flex flex-col items-center gap-4 py-10">
+            <h2 class="text-xl ">Conheça mais sobre nossos serviços:</h2>
+            <form action="https://api.sheetmonkey.io/form/dEVSKW9Z5SjzJdPYcFWdwG" method="post" class="flex flex-col gap-6 w-72">
+                <input type="text" name="Name" placeholder="Nome" class="rounded-md p-2 text-cor0" required>
+                <input type="email" name="Email" placeholder="E-mail" class="rounded-md p-2 text-cor0" required>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <button class="bg-cor2 font-bold border-cor2 rounded-md p-2 w-48 self-center mt-4 hover:bg-cor0 hover:text-cor2 border-2">Fale Conosco</button>
+            </form>
+        </footer>
     </main>
 </body>
 </html>
